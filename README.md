@@ -17,17 +17,25 @@ ML models to predict mortality using echo data had good internal and external va
 
 # File Structure
 
-├── CatBoost Models
+```
+├── CatBoost Models 
 │   ├── Mackay_Mortality_1095days_CatBoost.ipynb
 │   ├── Mackay_Mortality_1825days_CatBoost.ipynb
 │   └── Mackay_Mortality_365days_CatBoost.ipynb
+```
 
 The CatBoost folder consists of the notebooks used to get the results of the CatBoost model along with the generation of the respective SHAP figures for 1 year,3 year and 5 years.
-
+```
 └── ResNet Models
     ├── Mackay_Mortality_DL_1095_days.ipynb
     ├── Mackay_Mortality_DL_1825_days.ipynb
     └── Mackay_Mortality_DL_365_days.ipynb
+```
+The various figures used in the paper along with the code used to generate them is present in the figures folder.
+
+The Mackay and Alberta Data was pre-processed to remove unnecessary info and the notebooks for that are presnet in the Data Processing folder.
+
+PreProcessing.ipynb contains the pre-processing script for the video and to get the 16 frames for the ResNet model.
 
 The ResNet folder consists of the notebooks used to get the results of the ResNet  model along with the generation of the respective  Activation Map figures for 1 year,3 year and 5 years.
 
