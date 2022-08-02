@@ -35,9 +35,22 @@ The various figures used in the paper along with the code used to generate them 
 
 The Mackay and Alberta Data was pre-processed to remove unnecessary info and the notebooks for that are presnet in the Data Processing folder.
 
-PreProcessing.ipynb contains the pre-processing script for the video and to get the 16 frames for the ResNet model.
+
 
 The ResNet folder consists of the notebooks used to get the results of the ResNet  model along with the generation of the respective  Activation Map figures for 1 year,3 year and 5 years.
 
 # Requirements
 The models were implemented using PyTorch 1.8.1  and CatBoost 0.26.1 in Python 3.8.6 with nvidia 2080Ti consisting of 11GB GDDR6.The requirements.txt file has further information of the various packages used.
+
+# Getting Started
+Initally the data might need to be pre-processed to remove unwanted data so the Data Processing files inside the Data Processing folder need to run to pre process the data to get only those patient ID that have PLAX view and remove unwanted columns that have very less data values for both Mackay and Alberta Data and to get the respective data for 1-year,3-year and 5-year using the Alberta_Mortality_Data_Processing.ipynb and Mackay_Mortality_Data_Processing.ipynb.
+
+
+PreProcessing.ipynb contains the pre-processing script for the video and to get the 16 frames for the ResNet model which could be used initially to get all the required frames from the videos.
+
+After getting all the respective frames for each patient ID and the csv files , the CatBoost models could be run using the Mackay_Mortality_365days_CatBoost.ipynb ,Mackay_Mortality_1095days_CatBoost.ipynb and Mackay_Mortality_1825days_CatBoost.ipynb and each of them are customised seperately for the different timelines (1 year,3 year and 5 year). 
+
+Similary for the ResNet models , the following notebooks , Mackay_Mortality_DL_365_days.ipynb,Mackay_Mortality_DL_1095_days.ipynb,Mackay_Mortality_DL_1825_days.ipynb can be executed to get the model parameters for the different timelines (1 year,3 year and 5 year). 
+
+
+
