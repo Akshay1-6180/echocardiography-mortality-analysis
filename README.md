@@ -48,17 +48,20 @@ Initally the data might need to be pre-processed to remove unwanted data so the 
 PreProcessing.ipynb contains the pre-processing script for the video and to get the 16 frames for the ResNet model which could be used initially to get all the required frames from the videos.
 
 -input : csv file containing info about the patient ID
+
 -output: frames of the PLAX view are created and saved in the respective patient ID folder.
 
 After getting all the respective frames for each patient ID and the csv files , the CatBoost models could be run using the Mackay_Mortality_365days_CatBoost.ipynb ,Mackay_Mortality_1095days_CatBoost.ipynb and Mackay_Mortality_1825days_CatBoost.ipynb and each of them are customised seperately for the different timelines (1-year,3-year and 5-year). 
 
 -input : csv file containing info about the patients till 1 year ,3 year and 5 year
+
 -output: model trained and weights saved along with shap figures.
 
 
 Similary for the ResNet models , the following notebooks , Mackay_Mortality_DL_365_days.ipynb,Mackay_Mortality_DL_1095_days.ipynb,Mackay_Mortality_DL_1825_days.ipynb can be executed to get the model parameters for the different timelines (1-year,3-year and 5-year). 
 
 -input : csv file containing info about the patients till 1 year ,3 year and 5 year
+
 -output: model trained and weights saved along with grad cam visualisations.
 
 The various figures used in the paper along with the code used to generate them is present in the figures folder.Bootstrap.ipynb was used to generate figures related to the data bootstraping information for the model and the AUROC , PRC and other figures were generated from the figures notebook.
