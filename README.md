@@ -62,3 +62,18 @@ Similary for the ResNet models , the following notebooks , Mackay_Mortality_DL_3
 **output**: model trained and weights saved along with grad cam visualisations.
 
 The various figures used in the paper along with the code used to generate them is present in the figures folder.Bootstrap.ipynb was used to generate figures related to the data bootstraping information for the model and the AUROC , PRC and other figures were generated from the figures notebook.
+
+# CITATION
+
+```
+@article{https://doi.org/10.6084/m9.figshare.21620877.v2,
+  doi = {10.6084/M9.FIGSHARE.21620877.V2},
+  url = {https://figshare.com/articles/journal_contribution/Development_and_validation_of_echocardiography-based_machine-learning_models_to_predict_mortality/21620877/2},
+  author = {Valsaraj,  Akshay and Vasu Kalmady,  Sunil and Sharma,  Vaibhav and Frost,  Matthew and Sun,  Weijie and Sepehrvand,  Nariman and Ong,  Marcus and E.,  Cyril and Dyck,  Jason and anderson,  todd and Becher,  Harald and Weeks,  Sarah and Tromp,  Jasper and Hung,  Chung-Lieh and Ezekowitz,  Justin},
+  keywords = {Deep learning,  Medical biotechnology diagnostics (incl. biosensors),  Computer vision},
+  title = {Development and validation of echocardiography-based machine-learning models to predict mortality},
+  publisher = {figshare},
+  year = {2022},
+  copyright = {MIT License}
+}
+```
